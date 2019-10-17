@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const initialMovie = {
-    id: '',
     title: '',
     director: '',
     metascore: '',
@@ -10,7 +9,7 @@ const initialMovie = {
 };
 
 const UpdateMovie = props => {
-    console.log(props);
+
     const [movie, setMovie] = useState(initialMovie);
 
     const fetchMovie = id => {
